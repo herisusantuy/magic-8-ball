@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPn-ws-wJf">
+                                <rect key="frame" x="45" y="114" width="339" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJb-xQ-vFm">
+                                <rect key="frame" x="148" y="718" width="118" height="54"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="oqN-bb-X0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <state key="normal" title="ASK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbg-ry-QxG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="LYV-NH-Q6y">
+                                <rect key="frame" x="20" y="229" width="374" height="385"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="385" id="hPa-J3-t7W"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.46274509803921571" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VPn-ws-wJf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="7a5-LA-NT1"/>
+                            <constraint firstItem="aJb-xQ-vFm" firstAttribute="top" secondItem="LYV-NH-Q6y" secondAttribute="bottom" constant="104" id="8nT-Rq-w8e"/>
+                            <constraint firstItem="aJb-xQ-vFm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Fi-Di-Cij"/>
+                            <constraint firstItem="VPn-ws-wJf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9dL-rg-17Q"/>
+                            <constraint firstItem="LYV-NH-Q6y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="268" id="BgH-KT-5l7"/>
+                            <constraint firstItem="aJb-xQ-vFm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="297" id="DJt-KJ-OOB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VPn-ws-wJf" secondAttribute="trailing" constant="30" id="MQ4-st-n0i"/>
+                            <constraint firstItem="LYV-NH-Q6y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MWe-vi-pyu"/>
+                            <constraint firstItem="aJb-xQ-vFm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="SQG-eP-ShK"/>
+                            <constraint firstItem="LYV-NH-Q6y" firstAttribute="top" secondItem="VPn-ws-wJf" secondAttribute="bottom" constant="67" id="WyU-pD-88q"/>
+                            <constraint firstItem="LYV-NH-Q6y" firstAttribute="centerX" secondItem="aJb-xQ-vFm" secondAttribute="centerX" id="gzV-ey-9yr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="magicBall" destination="LYV-NH-Q6y" id="jQE-k9-fna"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="457.5" height="410.5"/>
+    </resources>
+</document>
